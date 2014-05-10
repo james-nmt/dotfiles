@@ -1,1 +1,13 @@
 export SBT_OPTS=-XX:MaxPermSize=256m
+
+# For Murex only
+function mapSGDrives() {
+	mount -t smbfs //mnguyen@sg.murex.com/sg-root/download ~/murex/T
+	mount -t smbfs //mnguyen@sg.murex.com/sg-root/home/mnguyen ~/murex/G
+	mount -t smbfs //mnguyen@sg.murex.com/sg-root/tools ~/murex/U
+}
+
+
+# For my development environment
+alias runScala="open ~/Tools/ScalaIDE/Eclipse.app
+alias runADT="open ~/Tools/ADTBundle/eclipse/Eclipse.app
