@@ -27,7 +27,7 @@ slate.bind("1:ctrl", function(win) {
   var appName = win.app().name();
   if (appName === "iTerm") {
     win.doOperation(pushRight);
-  } else if (appName === "Safari") {
+  } else if (appName === "Safari" || appName === "Firefox") {
     win.doOperation(pushLeft);
   } else {
     win.doOperation(pushTop);

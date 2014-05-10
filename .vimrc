@@ -42,7 +42,8 @@ syntax on
 " Highlight current line
 set cursorline
 " Make tabs as wide as two spaces
-set tabstop=2
+set tabstop=2 
+set shiftwidth=2
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
@@ -94,6 +95,7 @@ noremap <leader>W :w !sudo tee % > /dev/null<CR>
 if has("autocmd")
 	" Enable file type detection
 	filetype on
+	filetype indent on
 	" Treat .json files as .js
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 endif
